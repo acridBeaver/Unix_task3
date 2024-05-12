@@ -1,0 +1,31 @@
+INFO: myinit running success!
+INFO: myinit find task!: '/bin/sleep 1s /tmp/myinit/in_1 /tmp/myinit/out_1'
+INFO: myinit find task!: '/bin/sleep 2s /tmp/myinit/in_2 /tmp/myinit/out_2'
+INFO: myinit find task!: '/bin/sleep 3s /tmp/myinit/in_3 /tmp/myinit/out_3'
+INFO: Запущена задача под номером 1
+INFO: Запущена задача под номером 2
+INFO: Запущена задача под номером 3
+INFO: task number 1 finished with code 0
+INFO: Запущена задача под номером 1
+INFO: task number 2 finished with code 0
+INFO: Запущена задача под номером 2
+INFO: task number 1 finished with code 0
+INFO: Запущена задача под номером 1
+INFO: task number 2 finished with signal code 15
+INFO: Запущена задача под номером 2
+INFO: task number 3 finished with code 0
+INFO: Запущена задача под номером 3
+INFO: task number 1 finished with code 0
+INFO: Запущена задача под номером 1
+INFO: myinit caught signal SIGHUP
+INFO: task number 1 finished with code 0
+INFO: task number 2 finished with signal code 15
+INFO: task number 3 finished with signal code 15
+INFO: myinit re_running success!
+INFO: myinit find task!: '/bin/sleep 4s /tmp/myinit/in_4 /tmp/myinit/out_4'
+INFO: Запущена задача под номером 1
+INFO: task number 1 finished with code 0
+INFO: Запущена задача под номером 1
+INFO: myinit caught signal SIGINT
+INFO: task number 1 finished with code 0
+INFO: myinit ending success!

@@ -1,0 +1,14 @@
+Running first three tasks:
+$ ps -ef | grep /bin/sleep | head -n 3
+yrltvn     7176    6883  0 18:42 pts/0    00:00:00 /bin/sleep 3s
+yrltvn     7177    6884  0 18:42 pts/0    00:00:00 /bin/sleep 3s
+yrltvn     7180    6883  0 18:42 pts/0    00:00:00 /bin/sleep 2s
+After kill second task:
+$ ps -ef | grep /bin/sleep | head -n 3
+yrltvn     7176    6883  0 18:42 pts/0    00:00:00 /bin/sleep 3s
+yrltvn     7177    6884  0 18:42 pts/0    00:00:00 /bin/sleep 3s
+yrltvn     7180    6883  0 18:42 pts/0    00:00:00 /bin/sleep 2s
+Check update config (should be run only 1 task)
+Sending sighup to daemon:
+$ ps -ef | grep /bin/sleep | head -n 1
+yrltvn     7176    6883  0 18:42 pts/0    00:00:00 /bin/sleep 3s
